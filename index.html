@@ -1,0 +1,406 @@
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Вакансия: Offshore Drilling Supervisor | Морское бурение РФ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a1928;
+            color: #e2e8f0;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* Морская тема / Offshore стиль */
+        .hero {
+            background: linear-gradient(135deg, #020c17 0%, #0a2a3b 100%);
+            position: relative;
+            overflow: hidden;
+            border-bottom: 3px solid #ff8c42;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/hexellence.png');
+            opacity: 0.08;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Навигация */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff, #8bb9fe);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .logo span {
+            color: #ff8c42;
+            background: none;
+            -webkit-background-clip: unset;
+            background-clip: unset;
+        }
+
+        .tag {
+            background: rgba(255,140,66,0.15);
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(255,140,66,0.4);
+            color: #ffb47b;
+        }
+
+        /* Hero блок */
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 60px 0 80px 0;
+        }
+
+        .badge {
+            background: #ff8c42;
+            color: #0a1928;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            width: fit-content;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            max-width: 800px;
+        }
+
+        .highlight {
+            color: #ff8c42;
+            border-bottom: 2px solid #ff8c42;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: #b9d0f0;
+            max-width: 650px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #ff8c42;
+            color: #0a1928;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-block;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(255,140,66,0.3);
+        }
+
+        .btn-primary:hover {
+            background: #ffa259;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1.5px solid #ff8c42;
+            background: transparent;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #ffd6b3;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,140,66,0.1);
+            border-color: #ffa259;
+            color: #fff;
+        }
+
+        /* Секции */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .section-sub {
+            color: #8ba9c9;
+            margin-bottom: 48px;
+            font-size: 1.1rem;
+            border-left: 3px solid #ff8c42;
+            padding-left: 18px;
+        }
+
+        .grid-2cols {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .card {
+            background: #0f212f;
+            border-radius: 24px;
+            padding: 28px;
+            border: 1px solid #1e3a4a;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: #ff8c42;
+            transform: translateY(-5px);
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #ff8c42;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .list-styled {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .list-styled li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .list-styled li i {
+            font-size: 1rem;
+            margin-bottom: 0;
+            color: #ff8c42;
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .req-item {
+            background: #102a36;
+            border-radius: 60px;
+            padding: 12px 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 14px 18px;
+            background: #0c1a24;
+            border: 1px solid #2a4b5e;
+            border-radius: 16px;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #ff8c42;
+            box-shadow: 0 0 0 2px rgba(255,140,66,0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #cbdde9;
+        }
+
+        .contact-card {
+            background: #0c1a24;
+            border-radius: 32px;
+            padding: 40px;
+        }
+
+        footer {
+            background: #030d14;
+            text-align: center;
+            padding: 32px;
+            font-size: 0.85rem;
+            border-top: 1px solid #1e3a4a;
+            color: #6f92aa;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .hero-content { padding: 40px 0 50px; }
+            section { padding: 50px 0; }
+            .contact-card { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">DRILL<span>OFFSHORE</span> <span style="font-size:0.8rem;">RF</span></div>
+            <div class="tag"><i class="fas fa-ship"></i> Сахалин </div>
+        </div>
+        <div class="hero-content">
+            <div class="badge"><i class="fas fa-hard-hat"></i> Срочный найм 2026</div>
+            <h1>Супервайзер <span class="highlight">по бурению на море</span></h1>
+            <p class="hero-description">Вахтовый метод 28/28 или 35/35. Работа на современных полупогружных платформах и самоподъемных буровых установках (Jack-up) в территориальных водах РФ.</p>
+            <div class="cta-buttons">
+                <a href="#apply" class="btn-primary"><i class="fas fa-paper-plane"></i> Отправить резюме</a>
+                <a href="#requirements" class="btn-outline"><i class="fas fa-clipboard-list"></i> Требования к кандидату</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Ключевые выгоды -->
+    <section>
+        <div class="section-title">Преимущества работы <i class="fas fa-anchor" style="color:#ff8c42;"></i></div>
+        <div class="section-sub">Надёжный заказчик, официальный контракт, белая зарплата в рублях/валюте</div>
+        <div class="grid-2cols">
+            <div class="card"><i class="fas fa-coins"></i><h3>Доход от 500 000 ₽</h3><p>Фиксированная ставка + северные надбавки и премии за выполнение KPI по безаварийному бурению.</p></div>
+            <div class="card"><i class="fas fa-helicopter"></i><h3>Полная логистика</h3><p>Организация перелётов/вертолёта до места работ/проживание на платформе/питание.</p></div>
+            <div class="card"><i class="fas fa-shield-alt"></i><h3>Страховка & CHECK-UP</h3><p>Медицинская страховка для офшорного персонала, страхование жизни и здоровья на время вахты.</p></div>
+            <div class="card"><i class="fas fa-chart-line"></i><h3>Долгосрочный проект</h3><p>Контракт от 12 месяцев с пролонгацией. </p></div>
+        </div>
+    </section>
+
+    <!-- Требования (жесткие) -->
+    <section id="requirements">
+        <div class="section-title">Ключевые требования <i class="fas fa-check-circle" style="color:#ff8c42;"></i></div>
+        <div class="section-sub">Для работы на морских буровых установках в юрисдикции РФ</div>
+        <div class="requirements-grid">
+            <div class="req-item"><i class="fas fa-graduation-cap"></i> Высшее техническое (нефтегазовое/бурение)</div>
+            <div class="req-item"><i class="fas fa-clock"></i> Стаж супервайзингом на море от 5+ лет</div>
+            <div class="req-item"><i class="fas fa-id-card"></i> Действующие сертификаты IWCF Level 4 (Supervisor)</div>
+            <div class="req-item"><i class="fas fa-life-ring"></i> BOSIET / HUET + CA-EBS (или российские аналоги)</div>
+            <div class="req-item"><i class="fas fa-balance-scale"></i> Знание норм Ростехнадзора, ПБ 08-624-03</div>
+            <div class="req-item"><i class="fas fa-language"></i> Русский — C1 </div>
+            <div class="req-item"><i class="fas fa-chalkboard-user"></i> Опыт руководства.</div>
+            <div class="req-item"><i class="fas fa-chart-simple"></i> Контроль проходки, долот, параметров раствора, предупреждение ГНВП</div>
+        </div>
+        <div style="margin-top: 32px; background: #0f212f; border-radius: 24px; padding: 24px; border-left: 5px solid #ff8c42;">
+            <i class="fas fa-file-alt" style="color:#ff8c42; margin-right: 12px;"></i>
+            <strong>Обязанности:</strong> Управление процессом бурения, соблюдение программы, руководство суточными отчетами (IADC), координация с геологами, управление рисками, обеспечение HSE.
+        </div>
+    </section>
+
+    <!-- Форма отклика -->
+    <section id="apply">
+        <div class="section-title">Хочу стать частью команды</div>
+        <div class="section-sub">Заполните форму, и наш руководитель свяжется с вами в течение 24 часов.</div>
+        <div class="contact-card">
+            <form action="https://formsubmit.co/p.kamsky@npo-polycell.ru" method="imap">
+                                <input type="hidden" name="_subject" value="Новый кандидат: Offshore Supervisor РФ">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="grid-2cols" style="gap: 20px;">
+                    <div class="form-group"><label>ФИО полностью</label><input type="text" name="name" placeholder="Иванов Иван Иванович" required></div>
+                    <div class="form-group"><label>Телефон (WhatsApp/Telegram)</label><input type="tel" name="phone" placeholder="+7 900 000-00-00" required></div>
+                    <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="supervisor@offshore.ru" required></div>
+                    <div class="form-group"><label>Город / Вахтовый посёлок</label><input type="text" name="city" placeholder="Мурманск, Южно-Сахалинск, Астрахань..."></div>
+                </div>
+                <div class="form-group"><label>Ключевой опыт (укажите платформы, годы, глубина бурения)</label><textarea rows="4" name="experience" placeholder="Пример: СПБУ «Меркурий», 2021-2024, глубина моря 85м, посадочный джек-ап, бурение скважин до 4200м. Сертификат IWCF уровень 4 действует до 2027..."></textarea></div>
+                               <div class="form-group"><label>Дополнительная информация (график вахты, желаемый уровень дохода)</label><textarea rows="2" name="additional"></textarea></div>
+                <button type="submit" class="btn-primary" style="width:100%; justify-content: center;"><i class="fas fa-envelope"></i> Отправить заявку</button>
+                <p style="font-size: 0.75rem; margin-top: 18px; color: #869bac;"><i class="fas fa-lock"></i> Все данные конфиденциальны. Отклик обрабатывается в соответствии с 152-ФЗ.</p>
+            </form>
+            <div style="margin-top: 32px; text-align: center; font-size: 0.9rem; border-top: 1px solid #1e3a4a; padding-top: 24px;">
+                <i class="fas fa-phone-alt"></i> Telegram / WhatsApp для связи: <strong>+7 (920) 622-59-33 email: p.kamsky@npo-polycell.ru </strong> (руководитель проекта)
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p><i class="fas fa-dharmachakra"></i> Проект бурения на континентальном шельфе РФ | Лицензия Ростехнадзора</p>
+        <p style="margin-top: 12px;">© 2025 DRILLOFFSHORE RF — подбор супервайзеров и руководителей бурения. Мы ищем лучших в индустрии.</p>
+    </div>
+</footer>
+
+<!-- небольшой скрипт для плавного скролла -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+</script>
+   
+</body>
+</html>
